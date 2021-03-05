@@ -1,0 +1,39 @@
+.wrapper-animation-bounce {
+  width: 450px;
+  text-align: center;
+  height: 620px;
+  margin-top: 200px;
+}
+.title-animation-bounce {
+  color: rgb(153, 153, 153);
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.loading-dots > div {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(168, 164, 164);
+  border-radius: 50%;
+  display: inline-block;
+  animation: 1.5s bounce infinite ease-in-out both;
+}
+
+.loading-dots .bounce {
+  animation-delay: -0.3s;
+}
+
+.loading-dots .bounce2 {
+  animation-delay: -0.15s;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,558 @@
+.wrapper_content_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .sidebar {
+    width: 35%;
+    background-color: #f7f7f7;
+    height: 1000px;
+    text-align: center;
+    padding-top : 100px;
+  }
+  
+  .side_menu {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 160px;
+      color: #777777;
+  }
+  
+  .calendar {
+      height: 39px;
+  
+  }
+  
+  .payment {
+      margin-top: 30px;
+      height: 35px;
+  }
+  
+  .homes {
+      margin-top: 30px;
+      height: 35px;
+  }
+  
+  .user {
+      margin-top: 30px;
+      height: 35px;
+  }
+  
+  .side_label_calendar{
+      margin: 10px 0 0 20px;
+      font-size: 19px;
+  }
+  
+  .side_label_payment {
+      margin: 40px 0 0 23px;
+      font-size: 19px;
+  }
+  
+  .side_label_user{
+      margin: 40px 0 0 23px;
+      font-size: 19px;
+  }
+  
+  .side_label_homes {
+      margin: 40px 0 0 23px;
+      font-size: 19px;
+  }
+  
+  .wrapper_calendar {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .wrapper_payment {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .wrapper_homes {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 80px;
+  }
+  
+  .wrapper_user {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .span_label {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 20px;
+  }
+  
+  .about {
+    padding-top : 100px;
+    flex: 1;
+    background-color: #fff;
+    height: 1000px;
+    text-align: center;
+        /* clip-path: polygon(0 6vh, 100% 0, 100% 100%, 0 100%); */
+  }
+  
+  .banner {
+    background-image: url(../../assets/image/hero.jpg);
+    background-size: cover;
+    height: 100%;
+        /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
+  }
+  
+  .color_h2_details_profile {
+      /* background-image: webkit-gradient( linear, left top, right top, from(#7dd56f), to(#28b487) ); */
+      background-image: linear-gradient(to right, #7dd56f, #28b487);
+      -webkit-background-clip: text;
+  } 
+  
+  .speaker_man_1 {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: center; */
+      margin-left: 160px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+  }
+  
+  .speaker_man_2 {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: center; */
+      margin-left: 160px;
+      margin-bottom: 50px;
+  }
+  
+  .img_speaker {
+      width: 60px;
+      height: 50px;
+      clip-path: circle(50% at 50% 50%);
+  }
+  
+  .title_wrapper {
+      display: flex;
+      flex-direction: row;
+      padding-left: 20px;
+  }
+  
+  .title_speaker {
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #777777;
+  }
+  
+  .label_speaker {
+      font-size: 18px;
+      margin-left: 30px;
+      color: #777777;
+  
+  }
+  
+  .text_acara {
+      margin: 50px auto;
+      max-width: 70%;
+      text-align: left;
+      font-size: 20px;
+      line-height: 30px;
+      color: #777777;
+  }
+  
+  .img_plus {
+      display: flex;
+      flex-direction: row;
+      clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+      /* position: absolute;
+      top: 10; */
+  }
+  
+  .img_plus_seting {
+      width: 50%;
+  }
+  
+  .img_maps_seting {
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  }
+  
+  .people_review {
+  
+      width: 100%;
+      height: 700px;
+      background-image: linear-gradient(to right, #7dd56f, #28b487);
+      clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+      margin-bottom: 500px;
+      justify-content: space-between;
+  
+  }
+  
+  .box_review {
+      min-width: 350px;
+      height: 350px;
+      margin-top: 180px;
+      margin-left: 100px;
+      background-color: #f7f7f7;
+      border-radius: 8px;
+      box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%)
+  
+  }
+  
+  .scroll_menu::-webkit-scrollbar{
+      margin-top: 20px;
+  }
+  
+  .scroll_menu {
+      max-width: 100%;
+      display:flex;
+      overflow-x: auto;
+  }
+  
+  .account_review {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px;
+  }
+  
+  .name_review {
+      font-weight: bold;
+      margin-left: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+  }
+  
+  .text_review {
+      max-width: 250px;
+      margin: 30px auto;
+      line-height: 22px;
+      color: #777;
+      font-style: italic;
+      font-size: 18px;
+  }
+  
+  
+  
+  
+  /* SCREEN 760 */
+  
+  @media only screen and (max-width: 760px) { 
+      .banner {
+          height: 55vh;
+      }
+      .sidebar {
+          padding-top: 45px;
+          width: 35%;
+          font-size: 8px;
+          height: 700px;
+      }
+  
+  
+      .about {
+          padding-top: 45px;
+          font-size: 8px;
+          height: 700px;
+  
+      }
+  
+      .calendar {
+          height: 28px;
+  
+      }
+  
+      .payment {
+          margin-top: 30px;
+          height: 24px;
+      }
+  
+      .homes {
+          margin-top: 30px;
+          height: 24px;
+      }
+  
+      .user {
+          margin-top: 30px;
+          height: 24px;
+      }
+  
+      .side_label_calendar{
+          margin: 10px 0 0 0;
+          font-size: 13px;
+          margin-right: 10px;
+      }
+  
+      .side_label_payment {
+          margin: 10px 0 0 0;
+          font-size: 13px;
+          margin-right: 10px;
+  
+      }
+  
+      .side_label_user{
+          margin: 10px 0 0 0;
+          font-size: 13px;
+          margin-right: 10px;
+  
+      }
+  
+      .side_label_homes {
+          margin: 10px 0 0 0;
+          font-size: 13px;
+          margin-right: 10px;
+  
+      }
+  
+      .span_label {
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-right: 3px;
+      }
+  
+      .side_menu {
+          margin-top: 60px;
+          display: flex;
+          flex-direction:column;
+          justify-content: center;
+          margin-left: 7px;
+          color: #777777;
+      }
+  
+      .wrapper_calendar {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .wrapper_payment {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .wrapper_homes {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 80px;
+      }
+  
+      .wrapper_user {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .speaker_man_1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0;
+          margin-top: 30px;
+          margin-bottom: 20px;
+      }
+  
+      .speaker_man_2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0;
+          margin-bottom: 50px;
+      }
+  
+      .img_speaker {
+          width: 50px;
+          height: 40px;
+          clip-path: circle(50% at 50% 50%);
+      }
+  
+      .title_wrapper {
+          display: flex;
+          flex-direction: row;
+          padding-left: 0px;
+      }
+  
+      .title_speaker {
+          font-weight: bold;
+          font-size: 15px;
+          text-transform: uppercase;
+          color: #777777;
+      }
+  
+      .label_speaker {
+          font-size: 15px;
+          margin-left: 8px;
+          color: #777777;
+  
+      }
+  
+      .text_acara {
+          margin: 50px auto;
+          max-width: 80%;
+          text-align: left;
+          font-size: 15px;
+          line-height: 20px;
+          color: #777777;
+      }
+  
+      .people_review {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 450px;
+          background-image: linear-gradient(to right, #7dd56f, #28b487);
+          clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);
+          margin-bottom: 500px;
+      }
+  
+      .box_review {
+          min-width: 300px;
+          height: 300px;
+          margin-top: 75px;
+          margin-left: 100px;
+          background-color: #f7f7f7;
+          border-radius: 8px;
+          box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%)
+  
+      }
+  
+      .scroll_menu::-webkit-scrollbar{
+          margin-top: 20px;
+      }
+  
+      .scroll_menu {
+          max-width: 100%;
+          display:flex;
+          overflow-x: auto;
+      }
+  
+      .account_review {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 20px;
+      }
+  
+      .name_review {
+          font-weight: bold;
+          margin-left: 20px;
+          text-transform: uppercase;
+          font-size: 16px;
+      }
+  
+      .text_review {
+          max-width: 220px;
+          margin: 30px auto;
+          line-height: 20px;
+          color: #777;
+          font-style: italic;
+          font-size: 16px;
+      }
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+      /* SCREEN 480  */
+      @media only screen and (max-width: 480px) { 
+          .banner {
+              height: 55vh;
+          }
+          .sidebar {
+              padding-top: 45px;
+              width: 35%;
+              font-size: 8px;
+          }
+  
+  
+          .about {
+              padding-top: 45px;
+              font-size: 8px;
+          }
+  
+          .about {
+              padding-top: 45px;
+              font-size: 8px;
+          }
+  
+          .calendar {
+              height: 28px;
+  
+          }
+  
+          .payment {
+              margin-top: 30px;
+              height: 24px;
+          }
+  
+          .homes {
+              margin-top: 30px;
+              height: 24px;
+          }
+  
+          .user {
+              margin-top: 30px;
+              height: 24px;
+          }
+  
+          .side_label_calendar{
+              margin: 10px 0 0 0;
+              font-size: 13px;
+          }
+  
+          .side_label_payment {
+              margin: 10px 0 0 0;
+              font-size: 13px;
+          }
+  
+          .side_label_user{
+              margin: 10px 0 0 0;
+              font-size: 13px;
+          }
+  
+          .side_label_homes {
+              margin: 10px 0 0 0;
+              font-size: 13px;
+          }
+  
+  
+          .wrapper_calendar {
+              display: flex;
+              flex-direction: column;
+          }
+  
+          .wrapper_payment {
+              display: flex;
+              flex-direction: column;
+          }
+  
+          .wrapper_homes {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 80px;
+          }
+  
+          .wrapper_user {
+              display: flex;
+              flex-direction: column;
+          }
+  
+          .span_label {
+              text-transform: uppercase;
+              font-weight: bold;
+              margin-right: 5px;
+          }
+  
+          .side_menu {
+              margin-top: 60px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 7px;
+              color: #777777;
+          }
+      }

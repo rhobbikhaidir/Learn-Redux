@@ -1,0 +1,19 @@
+.container-aux {
+  background-color: #f7f7f7;
+  margin-right: 31px;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .container-aux {
+    width: 480px;
+    /* margin-left: 40px; */
+    background-color: #f7f7f7;
+    margin-right: 31px;
+    padding-top: 20px;
+    height: 100%;
+    margin-left: 0;
+  }
+}

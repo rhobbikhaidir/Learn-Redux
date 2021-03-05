@@ -1,0 +1,35 @@
+.wrapper-spinner-animation {
+  position: absolute;
+  width: 450px;
+  height: 390px;
+  text-align: center;
+}
+.title-animation {
+  color: rgb(168, 164, 164);
+  font-size: 18px;
+}
+
+.loading-spinner {
+  margin-top: 40px;
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: rgb(168, 164, 164);
+  animation: 1s spin infinite ease-in-out;
+  margin-bottom: 10rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper-spinner-animation {
+    width: 260px;
+    height: 290px;
+  }
+}

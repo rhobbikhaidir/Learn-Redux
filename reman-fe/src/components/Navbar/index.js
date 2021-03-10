@@ -1,33 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import Logo from '../../assets/image/reman-logo.png';
-import Cookies from 'universal-cookie';
-import axios from 'axios';
-import './index.css';
-import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import smiles from '../../assets/image/smiles.svg';
+import React, { useEffect, useState } from "react";
+import Logo from "../../assets/image/reman-logo.png";
+import Cookies from "universal-cookie";
+import axios from "axios";
+import "./index.css";
+import smiles from "../../assets/image/smiles.svg";
 
 export default function Index({ login }) {
-  const [me, setMe] = useState('');
-
+  const [me, setMe] = useState("");
   const cookies = new Cookies();
-  const HandleLogout = e => {
-    // const history = useHistory();
-    cookies.set('jwt', '', { path: '/' });
-    // console.log(cookies.get('jwt'));
-    // history.push('/');
-    // e.prevendDefault();
-    console.log('logout di klik');
+  const HandleLogout = (e) => {
+    cookies.set("jwt", "", { path: "/" });
+    console.log("logout di klik");
   };
   useEffect(() => {
     axios
-      .get('https://sureface-natours.herokuapp.com/api/v1/users/me', {
+      .get("https://sureface-natours.herokuapp.com/api/v1/users/me", {
         headers: {
-          Authorization: `Bearer ${cookies.get('jwt')}`,
+          Authorization: `Bearer ${cookies.get("jwt")}`,
         },
         withCredentials: true,
       })
-      .then(res => {
+      .then((res) => {
+        console.log(res);
         const name = res.data.data.data;
         console.log(name);
         setMe(name);
@@ -46,14 +40,14 @@ export default function Index({ login }) {
             src={Logo}
             alt="logo"
             className="img-hero-header"
-            onClick={() => alert('ngapain luh click!!!!')}
-            style={{ cursor: 'pointer' }}
+            onClick={() => alert("ngapain luh click!!!!")}
+            style={{ cursor: "pointer" }}
           />
         </div>
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'row',
+            display: "flex",
+            flexDirection: "row",
             marginRight: 20,
           }}
         >
@@ -66,11 +60,7 @@ export default function Index({ login }) {
           </nav>
           <nav>
             <button className="button-signup-nav-header">
-              <a
-                href="/register"
-                className="title-signup-nav-header"
-                // style={{ float: 'right' }}
-              >
+              <a href="/register" className="title-signup-nav-header">
                 Sign up
               </a>
             </button>
@@ -91,14 +81,14 @@ export default function Index({ login }) {
             src={Logo}
             alt="logo"
             className="img-hero-header"
-            onClick={() => alert('ngapain luh click!!!!')}
-            style={{ cursor: 'pointer' }}
+            onClick={() => alert("ngapain luh click!!!!")}
+            style={{ cursor: "pointer" }}
           />
         </div>
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'row',
+            display: "flex",
+            flexDirection: "row",
             marginRight: 20,
           }}
         >
